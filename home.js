@@ -21,8 +21,11 @@
     'Welcome back, Andrew'
 */
 
-//CODE HERE
+const greetUser = (username) => {
+    return 'Welcome back, [USERNAME]'
+} 
 
+greetUser('Kiu')
 
 
 
