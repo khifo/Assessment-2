@@ -33,7 +33,7 @@
 const pizza = {
     name: 'hawaiian',
     price: '5',
-    category: 'savory', 
+    category: 'tropical', 
     popularity: '6',
     rating: '7.5',
     tags: 'sweetandsavory'
@@ -49,7 +49,7 @@ const pizza = {
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -59,7 +59,7 @@ const pizza = {
     get the value.
 */
 
-//CODE HERE
+console.log(pizza['price'])
 
 
 /*
@@ -69,7 +69,8 @@ const pizza = {
     Print the value of your new price variable.
 */
 
-//CODE HERE
+const newPrice = 4
+console.log(newPrice)
 
 
 /*
@@ -79,8 +80,8 @@ const pizza = {
     Print the value of your category variable. 
 */
 
-//CODE HERE
-
+const newCategory = 'notPopular'
+console.log(newCategory)
 
 //////////////////PROBLEM 3////////////////////
 /* 
