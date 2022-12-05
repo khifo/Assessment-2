@@ -33,7 +33,8 @@ const cart = [
     }
 ]
 
-//CODE HERE
+const summedPrice = cart.reduce(callback(price)) 
+    console.log(callback)
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
@@ -53,7 +54,10 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+const calcFinalPrice = (cartTotal, couponValue, tax); {
+    (cartTotal + tax - couponValue)
+    return calcFinalPrice
+}
 
 
 

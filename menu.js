@@ -111,7 +111,7 @@ foodArr = [supreme, 8, special, 9, 10, combo]
     your food objects has.
 */
 
-const filteredFood = foodArr.filter()
+const filteredFood = foodArr.filter(category)
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
@@ -156,7 +156,11 @@ const filteredFood = foodArr.filter()
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+const filterByProperty = (property, number, type) {
+    property = (rating, popularity, price)
+    number = 
+    type = above, below
+}
 
 
 /*
