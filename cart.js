@@ -82,8 +82,10 @@ const calcFinalPrice = (cartTotal, couponValue, tax); {
 */
 
 /*
-    TEXT ANSWER HERE
-
+    name of the dish will be a string because of the text
+    price will be a number because of how much each dish is
+    ingredients of the dish will be a string explaining the what is in the dish
+    picture of the dish will be a string because it is an image
 */
 
 /*
@@ -91,4 +93,10 @@ const calcFinalPrice = (cartTotal, couponValue, tax); {
     guidelines.
 */
 
-//CODE HERE
+const customerObject = {
+    name: 'Dish',
+    price: 'Number',
+    ingredients: 'List of foods combined in the dish',
+    picture: 'Image of the dish'
+
+}
