@@ -30,7 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+const pizza = {
+    name: 'hawaiian',
+    price: '5',
+    category: 'savory', 
+    popularity: '6',
+    rating: '7.5',
+    tags: 'sweetandsavory'
+}
 
 
 
