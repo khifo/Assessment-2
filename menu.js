@@ -95,7 +95,7 @@ console.log(newCategory)
     data in some functions that you'll write.
 */
 
-//CODE HERE
+foodArr = [supreme, 8, special, 9, 10, combo]
 
 
 
@@ -111,7 +111,7 @@ console.log(newCategory)
     your food objects has.
 */
 
-//CODE HERE
+const filteredFood = foodArr.filter()
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
