@@ -89,9 +89,19 @@ let empTwo = empOne(Nick(...getSchedule));
     the employees array. 
 */
 
-//CODE HERE
-
-
+class Manager extends Employee {
+    constructor(name, shifts, employees) {
+        this.name = name;
+        this.shifts = shifts;
+        this.employees = employees;
+    }
+}
+    function getEmployees () {
+        console.log(`${this.name} manages ${this.employees}`)
+    }
+    function addEmployee (emp) {
+        this.addEmployee[emp]
+    }
 
 /*
     Create a new instance of your class.
@@ -104,7 +114,7 @@ let empTwo = empOne(Nick(...getSchedule));
     employees: Cece and Schmidt
 */
 
-//CODE HERE
+let manager = newManager('David, Monday afternoons, [Tom and Bill]')
 
 
 /*
@@ -112,15 +122,14 @@ let empTwo = empOne(Nick(...getSchedule));
     `manager` object.  
 */
 
-//CODE HERE
+manager.getEmployees()
 
 /*
     Call the `addEmployee` method on the 
     `manager` object passing in the string 
     'Coach' or whatever name you'd like.
 */
-
-//CODE HERE 
+manager.addEmployee(Coach) 
 
 /*
     Call the `getEmployees` method on the
@@ -128,4 +137,4 @@ let empTwo = empOne(Nick(...getSchedule));
     that an employee was added.
 */
 
-//CODE HERE
+manager.getEmployees(Coach)
