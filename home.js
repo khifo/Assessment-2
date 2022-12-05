@@ -52,8 +52,14 @@ greetUser('Kiu')
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-//CODE HERE
-
+function canWeDeliver (zipCode) {
+    if (deliveryAreaZipCodes.arr === zipCode) {
+        return 'We deliver to you'
+    } else {
+        return 'Sorry, we do not deliver to your area' 
+    }
+ 
+}
 
 
 /* 
@@ -73,7 +79,9 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
     Name your new function `canWeDeliverTwo`.
 */
 
-// CODE HERE
+function canWeDeliverTwo() {
+    includes(deliveryAreaZipCodes.arr)
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -109,9 +117,9 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
-
-
+let newDeal = '15% Off!'; {
+    console.log(p.replace('10', '15'))
+}
 
 /*
     The restaurant is going to continue its
@@ -126,4 +134,6 @@ const deals = [
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+let secondDeal = 'This deal lasts until the end of March!'; {
+    console.log(p.replace('March', 'April'))
+}
