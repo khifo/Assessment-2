@@ -55,8 +55,7 @@ const summedPrice = cart.reduce(callback(price))
 */
 
 const calcFinalPrice = (cartTotal, couponValue, tax); {
-    (cartTotal + tax - couponValue)
-    return calcFinalPrice
+    return (cartTotal + tax - couponValue)
 }
 
 
