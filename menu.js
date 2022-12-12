@@ -69,8 +69,7 @@ console.log(pizza.tags[1])
     Print the value of your new price variable.
 */
 
-const newPrice = 4
-console.log(newPrice)
+const { price } = pizza
 
 
 /*
