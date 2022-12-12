@@ -59,7 +59,7 @@ console.log(pizza.popularity)
     get the value.
 */
 
-console.log(pizza['price'])
+console.log(pizza.tags[1])
 
 
 /*
