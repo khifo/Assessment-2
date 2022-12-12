@@ -94,7 +94,32 @@ console.log(category);
     data in some functions that you'll write.
 */
 
-foodArr = ['supreme', '8', 'special', '9', '10', 'combo']
+foodArr = [
+    {
+        name: 'cheeseburger',
+        price: '6.99',
+        category: 'buns', 
+        popularity: '3',
+        rating: '6.8',
+        tags: ['savory', 'meat', 'fast food']
+    },
+        {
+        name: 'fries',
+        price: '2.99',
+        category: 'sides', 
+        popularity: '8',
+        rating: '4.3',
+        tags: ['salty', 'potatoe', 'crunchy']
+    },
+    {
+        name: 'sub sandwich',
+        price: '4.99',
+        category: 'entree', 
+        popularity: '8',
+        rating: '3.7',
+        tags: ['footlong', 'vegetables', 'fresh']
+    }
+]
 
 
 
@@ -110,7 +135,8 @@ foodArr = ['supreme', '8', 'special', '9', '10', 'combo']
     your food objects has.
 */
 
-const filteredFood = foodArr.filter(category)
+const filteredFood = foodArr.filter(category);
+console.log(filteredFood);
 
 // const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
