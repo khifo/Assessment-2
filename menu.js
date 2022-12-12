@@ -36,7 +36,7 @@ const pizza = {
     category: 'tropical', 
     popularity: '6',
     rating: '7.5',
-    tags: 'sweetandsavory'
+    tags: ['sweet', 'deep dish', 'controversy']
 }
 
 
