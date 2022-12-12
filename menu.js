@@ -94,7 +94,7 @@ console.log(newCategory)
     data in some functions that you'll write.
 */
 
-foodArr = [supreme, 8, special, 9, 10, combo]
+foodArr = ['supreme', '8', 'special', '9', '10', 'combo']
 
 
 
