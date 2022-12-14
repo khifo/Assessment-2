@@ -21,13 +21,13 @@
 
 class Employee {
     constructor(name, shifts) {
-        this.name = name;
-        this.shifts = shifts;
+        this.name = name
+        this.shifts = shifts
+        this.getSchedule = function () {
+            console.log(`${name} works on ${shifts}`);
+        };
     }
 }
-function getSchedule() {
-    console.log(`${this.name} works on ${this.shifts}`)
-};
 
 
 /*
@@ -47,7 +47,7 @@ const empOne = new Employee('Monday mornings, Friday afternoons')
     `empOne` object.
 */
 
-getSchedule('empOne')
+empOne.getSchedule()
 
 
 /*
@@ -63,6 +63,7 @@ getSchedule('empOne')
 */
 
 const empTwo = {...empOne, name: 'Nick'};
+console.log(empTwo)
 
 
 
@@ -91,7 +92,7 @@ const empTwo = {...empOne, name: 'Nick'};
 
 class Manager extends Employee {
     constructor(name, shifts, employees) {
-        super(name,shifts,getSchedule);
+        super(name,shifts,);
         this.employees = employees;
     }
     getEmployees () {
