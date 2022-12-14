@@ -32,9 +32,10 @@ const cart = [
         price: 7.99
     }
 ]
-
-const summedPrice = cart.reduce(callback(price)) 
-    console.log(callback)
+function sumofPrice (previousValue, currentValue) {
+    return previousValue + "::" + currentValue;
+}
+const summedPrice = cart.reduce(sumofPrice);
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
 
