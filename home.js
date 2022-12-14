@@ -21,11 +21,12 @@
     'Welcome back, Andrew'
 */
 
-const greetUser = ('username') => {
-    return 'Welcome back, [USERNAME]'
-} 
+const greetUser = (username) => {
+    return `Welcome back, ${username}`;
+  }
+console.log(greetUser('Kiu'));  
 
-greetUser('Kiu')
+
 
 
 
@@ -52,14 +53,15 @@ greetUser('Kiu')
 
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
-function canWeDeliver (zipCode) {
-    if (deliveryAreaZipCodes.arr === zipCode) {
-        return 'We deliver to you'
+function canWeDeliver(zipCode) {
+    if (deliveryAreaZipCodes.includes(zipCode)) {
+      return `Yes, we can deliver to ${zipCode}`;
     } else {
-        return 'Sorry, we do not deliver to your area' 
+      return `Sorry, we cannot deliver to ${zipCode}`;
     }
- 
-}
+  }
+  console.log(canWeDeliver(84602));
+  console.log(canWeDeliver(85205));
 
 
 /* 
@@ -79,9 +81,16 @@ function canWeDeliver (zipCode) {
     Name your new function `canWeDeliverTwo`.
 */
 
-function canWeDeliverTwo() {
-    includes(deliveryAreaZipCodes.arr)
-}
+function canWeDeliverTwo(zipCode) {
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++) {
+      if (deliveryAreaZipCodes[i] === zipCode) {
+        return `Yes, we can deliver to ${zipCode}`;
+      }
+    }
+    return `Sorry, we cannot deliver to ${zipCode}`;
+  }
+  console.log(canWeDeliverTwo(85204));
+  console.log(canWeDeliverTwo(84601));
 
 
 //////////////////PROBLEM 3////////////////////
@@ -117,9 +126,8 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-let newDeal = '15% Off!'; {
-    console.log(p.replace('10', '15'))
-}
+deals[0].title = deals[0].title.replace('15', '10');
+
 
 /*
     The restaurant is going to continue its
@@ -134,6 +142,4 @@ let newDeal = '15% Off!'; {
     to be displaying wrong on the live site.
 */
 
-let secondDeal = 'This deal lasts until the end of March!'; {
-    console.log(p.replace('March', 'April'))
-}
+deals[1].desc = deals[1].desc.replace('March', 'April').trim();
