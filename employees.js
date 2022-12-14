@@ -27,7 +27,7 @@ class Employee {
 }
 function getSchedule() {
     console.log(`${this.name} works on ${this.shifts}`)
-}
+};
 
 
 /*
@@ -40,14 +40,14 @@ function getSchedule() {
     shifts: weekday mornings, weekday afternoons
 */
 
-let empOne = employeeOne('Monday mornings, Friday afternoons')
+const empOne = new Employee('Monday mornings, Friday afternoons')
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
 
-empOne.getSchedule()
+getSchedule('empOne')
 
 
 /*
@@ -62,7 +62,7 @@ empOne.getSchedule()
     dot or bracket notation.
 */
 
-let empTwo = empOne(Nick(...getSchedule)); 
+const empTwo = {...empOne, name: 'Nick'};
 
 
 
@@ -91,18 +91,16 @@ let empTwo = empOne(Nick(...getSchedule));
 
 class Manager extends Employee {
     constructor(name, shifts, employees) {
-        this.name = name;
-        this.shifts = shifts;
+        super(name,shifts,getSchedule);
         this.employees = employees;
     }
-}
-    function getEmployees () {
+    getEmployees () {
         console.log(`${this.name} manages ${this.employees}`)
     }
-    function addEmployee (emp) {
-        this.addEmployee[emp]
+    addEmployee (emp) {
+        this.employees.push(emp)
     }
-
+}
 /*
     Create a new instance of your class.
     Save it to a variable called `manager`.
@@ -114,7 +112,7 @@ class Manager extends Employee {
     employees: Cece and Schmidt
 */
 
-let manager = newManager('David, Monday afternoons, [Tom and Bill]')
+const manager = new Manager('David, Monday afternoons, [Tom and Bill]')
 
 
 /*
@@ -129,7 +127,7 @@ manager.getEmployees()
     `manager` object passing in the string 
     'Coach' or whatever name you'd like.
 */
-manager.addEmployee(Coach) 
+manager.addEmployee('Coach') 
 
 /*
     Call the `getEmployees` method on the
@@ -137,4 +135,4 @@ manager.addEmployee(Coach)
     that an employee was added.
 */
 
-manager.getEmployees(Coach)
+manager.getEmployees()
