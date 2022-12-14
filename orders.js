@@ -56,7 +56,7 @@ console.log(`The order for customer${this.customerId} is now ${this.status}`)
     customer: 575
 */
 
-class firstTicket {
+class newfirstTicket {
     constructor (foodOrdered, time, customer){
         this.foodOrdered = foodOrdered
         this.time = time
@@ -71,4 +71,4 @@ class firstTicket {
     'cooking'
 */
 
-const updateStatus = () => firstTicket(cooking)
+const updateStatus = () => newfirstTicket(cooking)
