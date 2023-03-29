@@ -34,16 +34,14 @@ class Ticket {
         this.items = items;
         this.orderTime = orderTime;
         this.customerId = customerId;
-        status = queued;
+        this.status = 'queued';
     }
 }
-class updateStatus {
-    constructor(newStatus){
-        this.status = updateStatus;
-    }
+updateStatus(newStatus) ;{
+        this.status2 = newStatus;
 }
 
-console.log(`The order for customer${this.customerId} is now ${this.status}`)
+console.log(`The order for customer${this.customerId} is now ${this.status2}`)
 
 /*
     Create a new instance of your class.
@@ -56,13 +54,9 @@ console.log(`The order for customer${this.customerId} is now ${this.status}`)
     customer: 575
 */
 
-class newfirstTicket {
-    constructor (foodOrdered, time, customer){
-        this.foodOrdered = foodOrdered
-        this.time = time
-        this.customer = customer
-    }
-}
+const firstTicket = new Ticket(items, orderTime, customerId);
+
+
 
 
 /*
@@ -71,4 +65,4 @@ class newfirstTicket {
     'cooking'
 */
 
-const updateStatus = () => newfirstTicket(cooking)
+firstTicket.updateStatus('cooking');
