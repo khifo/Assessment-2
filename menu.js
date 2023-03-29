@@ -118,6 +118,22 @@ foodArr = [
         popularity: '8',
         rating: '3.7',
         tags: ['footlong', 'vegetables', 'fresh']
+    },
+    {
+        name: 'spicy chicken sandwich',
+        price: '3.99',
+        category: 'entree',
+        popularity: '9',
+        rating: '7.2',
+        tags: ['savory', 'chicken', 'hot']
+    },
+    {
+        name: 'ice cream',
+        price: '1.50',
+        category: 'dessert',
+        popularity: '10',
+        rating: '8.7',
+        tags: ['cold', 'sweet', 'sugar']
     }
 ]
 
