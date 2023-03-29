@@ -21,13 +21,15 @@
 
 class Employee {
     constructor(name, shifts) {
-        this.name = name
-        this.shifts = shifts
-        this.getSchedule = function () {
-            console.log(`${name} works on ${shifts}`);
-        };
+      this.name = name;
+      this.shifts = shifts;
     }
-}
+  
+    getSchedule() {
+      console.log(`${this.name} works on ${this.shifts}`);
+    }
+  }
+  
 
 
 /*
@@ -40,7 +42,7 @@ class Employee {
     shifts: weekday mornings, weekday afternoons
 */
 
-const empOne = new Employee('Monday mornings, Friday afternoons')
+const empOne = new Employee('John', 'Weekday mornings')
 
 /*
     Call the `getSchedule` method on the
@@ -113,7 +115,7 @@ class Manager extends Employee {
     employees: Cece and Schmidt
 */
 
-const manager = new Manager('David, Monday afternoons, [Tom and Bill]')
+const manager = new Manager('David', 'Monday afternoons', ['Tom', 'Bill'])
 
 
 /*
