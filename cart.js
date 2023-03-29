@@ -102,9 +102,9 @@ function calcFinalPrice(cartTotal, couponValue, tax) {
 */
 
 const customerObject = {
-    name: 'Dish',
-    price: 'Number',
-    ingredients: 'List of foods combined in the dish',
-    picture: 'Image of the dish'
+    name: 'a string data type, sequence of characters',
+    email: 'a string data type, sequence of characters',
+    phoneNumber: 'a string data type includes digits, dashes, parantheses',
+    address: 'an object data type because it will include a street, city, state, and postal code, each will include numbers and letters'
 
 }
