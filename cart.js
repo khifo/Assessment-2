@@ -32,12 +32,10 @@ const cart = [
         price: 7.99
     }
 ]
-function sumofPrice (previousValue, currentValue) {
-    return previousValue + "::" + currentValue;
-}
-const summedPrice = cart.reduce(sumofPrice);
+const total = cart.reduce((acc, food) => acc + food.price, 0);
+console.log(total);
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -55,9 +53,8 @@ const summedPrice = cart.reduce(sumofPrice);
     decimals, for example: .06 for a 6% tax.
 */
 
-const calcFinalPrice = (cartTotal, couponValue, tax); {
-    return (cartTotal + tax - couponValue)
-}
+
+
 
 
 
