@@ -52,8 +52,19 @@ console.log(total);
     Note: the numbers passed in for `tax` will be
     decimals, for example: .06 for a 6% tax.
 */
-
-
+function calcFinalPrice(cartTotal, couponValue, tax) {
+    const taxedTotal = cartTotal * (1 + tax);
+    const finalPrice = taxedTotal - couponValue;
+    return finalPrice;
+  }
+  const foodTotal = 26.97;
+  const coupon = 7.00;
+  const tax = 0.06;
+  
+  const finalPrice = calcFinalPrice(total, coupon, tax);
+  
+  console.log(finalPrice); 
+    
 
 
 
